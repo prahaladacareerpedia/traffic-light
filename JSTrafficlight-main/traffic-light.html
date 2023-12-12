@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic-light</title>
+    <link rel="stylesheet" href="traffic-light.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="trafic-container ">
+        <h1 class="heading">Traffic Light</h1>
+        <div class="d-flex flex-row justify-content-center m-5">
+            <div class="d-flex flex-column justify-content-center m-2">
+                <button class="Stop m-3" id="stopButton" onclick="stop_eliment()">Stop</button>
+                <button class="Stop m-3" id="readyButton" onclick="ready_eliment()">Ready</button>
+                <button class="Stop  m-3" id="goButton" onclick="go_eliment()">Go</button>
+            </div>
+            <div class="trafic-button">
+                <div>
+                    <button class="light" id="stopLight"></button>
+                </div>
+                <div><button class="light" id="readyLight"></button></div>
+                <div><button class="light" id="goLight"></button></div>
+            </div>
+        </div>
+    </div>
+    <script src="traffic-light.js"></script>
+</body>
+
+</html>
